@@ -1,8 +1,18 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
+ * Created by: katherine
+ * Created on: Feb 2026
+ * This program will be cookie clicker!!! I love cokieesssss!!!
 */
 
-basic.showString('Hello, World!')
+let cookie: number
+
+basic.clearScreen()
+basic.showString("0")
+
+input.onButtonPressed(Button.A, function()
+    {basic.clearScreen()
+    cookie = cookie+1
+
+    basic.showString(cookie)
+    })
