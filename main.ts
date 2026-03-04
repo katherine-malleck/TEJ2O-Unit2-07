@@ -5,14 +5,17 @@
  * This program will be cookie clicker!!! I love cokieesssss!!!
 */
 
-let cookie: number
+let cookie = 0
 
 basic.clearScreen()
 basic.showString("0")
 
-input.onButtonPressed(Button.A, function()
-    {basic.clearScreen()
-    cookie = cookie+1
+input.onButtonPressed(Button.A, function () {
+    cookie += 1
+    basic.showNumber(cookie)
+})
 
-    basic.showString(cookie)
-    })
+input.onButtonPressed(Button.B, function () {
+    cookie = 0
+    basic.showNumber(cookie)
+})
