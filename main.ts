@@ -8,7 +8,7 @@
 let cookie = 0
 
 basic.clearScreen()
-basic.showString("0")
+basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
     cookie += 1
